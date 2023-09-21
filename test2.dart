@@ -64,15 +64,14 @@ class _TestState extends State<Test2> {
             return AlertDialog(
               title: Text("Delete"),
               content:Text("Are you sure to delete this item"),
-              actions: [
-                ElevatedButton( 
+              actions: [ 
                   child: Text("Yes"), 
-                  onPressed: (){}),
-                ElevatedButton( 
+                  onPressed: (){},
+                
                   child: Text("Cancle"), 
                   onPressed: (){
                     Navigator.of(context).pop();
-                  })
+                  }
               ],
             );
           } );
